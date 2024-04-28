@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-25 10:36:02.518908",
+ "default_view": "Dashboard",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "check_in",
+  "rhyme_time",
+  "morning_snacks",
+  "play_time",
+  "lunch_time",
+  "column_break_pxxf",
+  "sleep_time",
+  "evening_snacks",
+  "evening_play_time",
+  "check_out",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "check_in",
+   "fieldtype": "Time",
+   "label": "Check in"
+  },
+  {
+   "fieldname": "rhyme_time",
+   "fieldtype": "Time",
+   "label": "Rhyme Time"
+  },
+  {
+   "fieldname": "morning_snacks",
+   "fieldtype": "Time",
+   "label": "Morning Snacks"
+  },
+  {
+   "fieldname": "play_time",
+   "fieldtype": "Time",
+   "label": "play Time"
+  },
+  {
+   "fieldname": "lunch_time",
+   "fieldtype": "Time",
+   "label": "Lunch Time"
+  },
+  {
+   "fieldname": "column_break_pxxf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sleep_time",
+   "fieldtype": "Time",
+   "label": "Sleep Time"
+  },
+  {
+   "fieldname": "evening_snacks",
+   "fieldtype": "Time",
+   "label": "Evening Snacks"
+  },
+  {
+   "fieldname": "evening_play_time",
+   "fieldtype": "Time",
+   "label": "Evening Play Time"
+  },
+  {
+   "fieldname": "check_out",
+   "fieldtype": "Time",
+   "label": "Check out"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "schedule",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-04-28 20:47:33.830473",
+ "modified_by": "Administrator",
+ "module": "Daycare_management",
+ "name": "schedule",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
