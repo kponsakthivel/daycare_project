@@ -5,17 +5,28 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_s4au"
+  "name_of_the_fees",
+  "amount"
  ],
  "fields": [
   {
-   "fieldname": "section_break_s4au",
-   "fieldtype": "Section Break"
+   "fieldname": "name_of_the_fees",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Fees Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-28 20:55:43.190828",
+ "modified": "2024-04-29 12:13:31.828348",
  "modified_by": "Administrator",
  "module": "Daycare_management",
  "name": "Fees Structure",
