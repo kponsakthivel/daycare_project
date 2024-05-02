@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class StafDetails(Document):
+class BloodGroup(Document):
 	pass

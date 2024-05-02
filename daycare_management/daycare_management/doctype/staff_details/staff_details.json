@@ -1,0 +1,204 @@
+{
+ "actions": [],
+ "autoname": "format:ST-{###}",
+ "creation": "2024-04-25 10:15:54.596454",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "staf_details_section",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "full_name",
+  "column_break_vcoc",
+  "age",
+  "grade",
+  "date_of_birth",
+  "gender",
+  "column_break_vxmi",
+  "role",
+  "qualification",
+  "salary",
+  "status",
+  "user_details_section",
+  "user_id",
+  "create_user_permission",
+  "create_user",
+  "contact_details",
+  "phone_number",
+  "blood_group",
+  "address"
+ ],
+ "fields": [
+  {
+   "fieldname": "staf_details_section",
+   "fieldtype": "Section Break",
+   "label": "Staff Information"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Role",
+   "options": "Role",
+   "reqd": 1
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Age",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Data",
+   "label": "Qualification",
+   "reqd": 1
+  },
+  {
+   "fieldname": "blood_group",
+   "fieldtype": "Data",
+   "label": "Blood Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Phone number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_vcoc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "label": "Address",
+   "options": "Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "salary",
+   "fieldtype": "Currency",
+   "label": "Salary",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "label": "Grade",
+   "reqd": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "is_virtual": 1,
+   "label": "Full Name",
+   "options": "f\"{doc.first_name}{doc.last_name}\"",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vxmi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_details",
+   "fieldtype": "Tab Break",
+   "label": "Address & Contacts"
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive\nSuspended\nLeft",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender",
+   "reqd": 1
+  },
+  {
+   "fieldname": "user_details_section",
+   "fieldtype": "Section Break",
+   "label": "User Details"
+  },
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Link",
+   "label": "User ID",
+   "options": "User"
+  },
+  {
+   "default": "0",
+   "fieldname": "create_user_permission",
+   "fieldtype": "Check",
+   "label": "Create User Permission"
+  },
+  {
+   "depends_on": "eval:(!doc.user_id)",
+   "fieldname": "create_user",
+   "fieldtype": "Button",
+   "label": "Create User"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-02 09:18:46.107685",
+ "modified_by": "Administrator",
+ "module": "Daycare_management",
+ "name": "Staff Details",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

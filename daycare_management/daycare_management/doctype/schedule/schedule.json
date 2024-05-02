@@ -11,6 +11,7 @@
   "morning_snacks",
   "play_time",
   "lunch_time",
+  "time_table_details",
   "column_break_pxxf",
   "sleep_time",
   "evening_snacks",
@@ -77,12 +78,18 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "time_table_details",
+   "fieldtype": "Table",
+   "label": "Time Table Details",
+   "options": "Time Table Details"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-04-28 20:47:33.830473",
+ "modified": "2024-04-30 09:36:14.014874",
  "modified_by": "Administrator",
  "module": "Daycare_management",
  "name": "schedule",
